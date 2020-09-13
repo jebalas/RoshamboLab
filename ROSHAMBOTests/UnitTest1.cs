@@ -149,5 +149,21 @@ namespace ROSHAMBOTests
 
         }
 
+        [Fact]
+        public void ShouldWriteErrorIfInputNotValid()
+        {
+            //Arrange
+            var inputOne = "";
+            var inputTwo = "123";
+            var expectedResult = "Input not valid - Please enter rock, paper or scissors";
+            Service service = new Service();
+
+            //Act
+            string result = service.Play(inputOne, inputTwo);
+
+            //Assert
+            Assert.Equal(expectedResult, result);
+
+        }
     }
 }
