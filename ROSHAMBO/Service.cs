@@ -6,8 +6,11 @@ namespace ROSHAMBO
         public Service()
         {
         }
-        public string Play(string inputOne, string inputTwo)
+        public string Play(string inputFirst, string inputSecond)
         {
+            var inputOne = inputFirst.ToLower();
+            var inputTwo = inputSecond.ToLower();
+
             switch (inputOne)
             {
                 case "rock":

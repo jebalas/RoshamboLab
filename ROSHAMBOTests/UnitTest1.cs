@@ -132,7 +132,22 @@ namespace ROSHAMBOTests
             Assert.Equal(expectedResult3, result3);
         }
 
-       
+       [Fact]
+       public void ShouldConvertInputUpperToLowerCase()
+        {
+            //Arrange
+            var inputOne = "Rock";
+            var inputTwo = "PAPER";
+            var expectedResult = "paper";
+            Service service = new Service();
+
+            //Act
+            string result = service.Play(inputOne, inputTwo);
+
+            //Assert
+            Assert.Equal(expectedResult, result);
+
+        }
 
     }
 }
