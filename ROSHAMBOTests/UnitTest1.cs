@@ -93,7 +93,7 @@ namespace ROSHAMBOTests
         }
 
         [Fact]
-        public void TieGame()
+        public void TieGameTests()
         {
             //Arrange
             var inputOne = "rock";
@@ -107,6 +107,29 @@ namespace ROSHAMBOTests
             //Assert
             Assert.Equal(expectedResult, result);
 
+            //Arrange
+            var input1 = "paper";
+            var input2 = "paper";
+            var expectedResult2 = "tie";
+            Service service2 = new Service();
+
+            //Act
+            string result2 = service.Play(input1, input2);
+
+            //Assert
+            Assert.Equal(expectedResult2, result2);
+
+            //Arrange
+            var input3 = "scissors";
+            var input4 = "scissors";
+            var expectedResult3 = "tie";
+            Service service3 = new Service();
+
+            //Act
+            string result3 = service.Play(input3, input4);
+
+            //Assert
+            Assert.Equal(expectedResult3, result3);
         }
     }
 }
