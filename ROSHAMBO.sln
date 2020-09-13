@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ROSHAMBO", "ROSHAMBO\ROSHAMBO.csproj", "{D8B41CBE-1512-4C02-B0BF-7105A281441C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ROSHAMBOTests", "ROSHAMBOTests\ROSHAMBOTests.csproj", "{A9D0F78F-E51B-4682-B24E-FCE2E5E61E18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8B41CBE-1512-4C02-B0BF-7105A281441C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B41CBE-1512-4C02-B0BF-7105A281441C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B41CBE-1512-4C02-B0BF-7105A281441C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B41CBE-1512-4C02-B0BF-7105A281441C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9D0F78F-E51B-4682-B24E-FCE2E5E61E18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9D0F78F-E51B-4682-B24E-FCE2E5E61E18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9D0F78F-E51B-4682-B24E-FCE2E5E61E18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9D0F78F-E51B-4682-B24E-FCE2E5E61E18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
