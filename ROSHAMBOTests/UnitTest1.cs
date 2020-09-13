@@ -15,6 +15,9 @@ namespace ROSHAMBOTests
             var expectedResult = "rock";
             Service service = new Service();
 
+            //Act
+            string result = service.Play(inputOne, inputTwo);
+
 
         }
     }

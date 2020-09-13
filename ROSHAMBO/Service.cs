@@ -6,5 +6,9 @@ namespace ROSHAMBO
         public Service()
         {
         }
+        public string Play(string inputOne, string inputTwo)
+        {
+            return "0";
+        }
     }
 }
