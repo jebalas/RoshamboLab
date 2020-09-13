@@ -38,5 +38,15 @@ namespace ROSHAMBOTests
             Assert.Equal(expectedResult, result);
 
         }
+
+        [Fact]
+        public void ScissorsBeatsPaperTests()
+        {
+            //Arrange
+            var inputOne = "paper";
+            var inputTwo = "scissors";
+            var expectedResult = "scissors";
+            Service service = new Service();
+        }
     }
 }

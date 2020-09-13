@@ -12,6 +12,8 @@ namespace ROSHAMBO
                 return "rock";
             else if (inputOne == "paper" && inputTwo == "rock")
                 return "paper";
+            else if (inputOne == "paper" && inputTwo == "scissors")
+                return "scissors";
             return "0";
         }
     }
