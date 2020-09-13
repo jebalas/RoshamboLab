@@ -20,6 +20,19 @@ namespace ROSHAMBOTests
 
             //Assert
             Assert.Equal(expectedResult, result);
+
+            //Arrange
+            var input1 = "scissors";
+            var input2 = "rock";
+            var expectedResult2 = "rock";
+            Service service2 = new Service();
+
+            //Act
+            string result2 = service.Play(input1, input2);
+
+            //Assert
+            Assert.Equal(expectedResult2, result2);
+
         }
 
         [Fact]
@@ -64,6 +77,18 @@ namespace ROSHAMBOTests
 
             //Assert
             Assert.Equal(expectedResult, result);
+
+            //Arrange
+            var input1 = "scissors";
+            var input2 = "paper";
+            var expectedResult2 = "scissors";
+            Service service2 = new Service();
+
+            //Act
+            string result2 = service.Play(input1, input2);
+
+            //Assert
+            Assert.Equal(expectedResult2, result2);
         }
     }
 }
