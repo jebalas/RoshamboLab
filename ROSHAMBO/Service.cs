@@ -8,15 +8,34 @@ namespace ROSHAMBO
         }
         public string Play(string inputOne, string inputTwo)
         {
-            if ((inputOne == "rock" && inputTwo == "scissors") || (inputOne == "scissors" && inputTwo == "rock"))
-                return "rock";
-            else if ((inputOne == "paper" && inputTwo == "rock") || (inputOne == "rock" && inputTwo == "paper"))
-                return "paper";
-            else if (inputOne == "paper" && inputTwo == "scissors" || (inputOne == "scissors" && inputTwo == "paper"))
-                return "scissors";
-            else if ((inputOne == "rock" && inputTwo == "rock") || (inputOne == "paper" && inputTwo == "paper") || (inputOne == "scissors" && inputTwo == "scissors"))
-                return "tie";
-            return "0";
+            switch (inputOne)
+            {
+                case "rock":
+                    if (inputTwo == "rock")
+                        return "tie";
+                    else if (inputTwo == "paper")
+                        return "paper";
+                    else if (inputTwo == "scissors")
+                        return "rock";
+                    break;
+                case "paper":
+                    if (inputTwo == "rock")
+                        return "paper";
+                    else if (inputTwo == "paper")
+                        return "tie";
+                    else if (inputTwo == "scissors")
+                        return "scissors";
+                    break;
+                case "scissors":
+                    if (inputTwo == "rock")
+                        return "rock";
+                    else if (inputTwo == "paper")
+                        return "scissors";
+                    else if (inputTwo == "scissors")
+                        return "tie";
+                    break;
+            }
+                    return "0";
         }
     }
 }
