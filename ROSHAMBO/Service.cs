@@ -8,7 +8,8 @@ namespace ROSHAMBO
         }
         public string Play(string inputOne, string inputTwo)
         {
-            return "0";
+           
+            return "rock";
         }
     }
 }

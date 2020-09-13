@@ -18,7 +18,8 @@ namespace ROSHAMBOTests
             //Act
             string result = service.Play(inputOne, inputTwo);
 
-
+            //Assert
+            Assert.Equal(expectedResult, result);
         }
     }
 }
