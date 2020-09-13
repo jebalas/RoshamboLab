@@ -37,6 +37,17 @@ namespace ROSHAMBOTests
             //Assert
             Assert.Equal(expectedResult, result);
 
+            //Arrange
+            var input1 = "rock";
+            var input2 = "paper";
+            var expectedResult2 = "paper";
+            Service service2 = new Service();
+
+            //Act
+            string result2 = service.Play(input1, input2);
+
+            //Assert
+            Assert.Equal(expectedResult2, result2);
         }
 
         [Fact]

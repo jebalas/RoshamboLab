@@ -8,9 +8,9 @@ namespace ROSHAMBO
         }
         public string Play(string inputOne, string inputTwo)
         {
-            if (inputOne == "rock" && inputTwo == "scissors")
+            if ((inputOne == "rock" && inputTwo == "scissors") || (inputOne == "scissors" && inputTwo == "rock"))
                 return "rock";
-            else if (inputOne == "paper" && inputTwo == "rock")
+            else if ((inputOne == "paper" && inputTwo == "rock") || (inputOne == "rock" && inputTwo == "paper"))
                 return "paper";
             else if (inputOne == "paper" && inputTwo == "scissors")
                 return "scissors";
