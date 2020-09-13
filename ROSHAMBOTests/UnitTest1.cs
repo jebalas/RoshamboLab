@@ -1,4 +1,5 @@
 using System;
+using ROSHAMBO;
 using Xunit;
 
 namespace ROSHAMBOTests
@@ -6,8 +7,14 @@ namespace ROSHAMBOTests
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void RockBeatsScissorsTests()
         {
+            //Arrange
+            var inputOne = "rock";
+            var inputTwo = "scissors";
+            var expectedResult = "rock";
+            Service service = new Service();
+
 
         }
     }
