@@ -47,6 +47,12 @@ namespace ROSHAMBOTests
             var inputTwo = "scissors";
             var expectedResult = "scissors";
             Service service = new Service();
+
+            //Act
+            string result = service.Play(inputOne, inputTwo);
+
+            //Assert
+            Assert.Equal(expectedResult, result);
         }
     }
 }
