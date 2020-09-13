@@ -89,6 +89,24 @@ namespace ROSHAMBOTests
 
             //Assert
             Assert.Equal(expectedResult2, result2);
+
+        }
+
+        [Fact]
+        public void TieGame()
+        {
+            //Arrange
+            var inputOne = "rock";
+            var inputTwo = "rock";
+            var expectedResult = "tie";
+            Service service = new Service();
+
+            //Act
+            string result = service.Play(inputOne, inputTwo);
+
+            //Assert
+            Assert.Equal(expectedResult, result);
+
         }
     }
 }
